@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Nav from './components/Nav';
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 
@@ -8,7 +7,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
         <Switch>
           <Route exact path="/">
             <Home />
