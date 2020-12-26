@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Show from './pages/Show';
 import Starred from './pages/Starred';
 
 class App extends Component {
@@ -10,6 +11,9 @@ class App extends Component {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/show/:id">
+            <Show />
           </Route>
           <Route exact path="/starred">
             <Starred />
