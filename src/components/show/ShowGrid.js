@@ -6,7 +6,6 @@ import { FlexGrid } from '../styled';
 import IMAGE_NOT_FOUND from '../../images/not-found.png';
 
 const ShowGrid = ({ data }) => {
-  console.log(data);
   return (
     <FlexGrid>
       {data.map(({ show }) => (
