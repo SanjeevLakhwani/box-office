@@ -9,6 +9,8 @@ const LINKs = [
 ];
 
 const Nav = () => {
+  const location = useLocation();
+
   return (
     <div>
       <NavList>
